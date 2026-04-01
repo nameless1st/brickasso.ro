@@ -1,21 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery – Brickasso®</title>
-  <meta name="description" content="Discover Brickasso®'s LEGO Art gallery: watches, portraits, and creative masterpieces by Albert Oprea." />
 
-  <link rel="canonical" href="https://brickasso.art/gallery.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Gallery – Brickasso® LEGO Art" />
-  <meta property="og:description" content="Explore Brickasso®'s LEGO Art gallery: unique watches, portraits, and masterpieces built from thousands of LEGO bricks." />
+  <title>Galerie | Brickasso® | Artă LEGO® originală de Albert Oprea</title>
+  <meta name="description" content="Descoperă galeria Brickasso® cu lucrări LEGO® originale realizate de Albert Oprea. Explorează portrete, ceasuri și opere sculpturale construite manual din mii de piese LEGO®." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Albert Oprea" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://brickasso.art/gallery.html" />
+
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Brickasso®" />
+  <meta property="og:title" content="Galerie | Brickasso® Artă LEGO®" />
+  <meta property="og:description" content="Explorează galeria Brickasso®: portrete, ceasuri și lucrări sculpturale unice construite manual din mii de piese LEGO®." />
   <meta property="og:image" content="https://brickasso.art/logo.png" />
   <meta property="og:url" content="https://brickasso.art/gallery.html" />
+  <meta property="og:image:alt" content="Galeria Brickasso® cu lucrări LEGO® originale de Albert Oprea" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Galerie | Brickasso® Artă LEGO®" />
+  <meta name="twitter:description" content="Descoperă galeria Brickasso® cu lucrări LEGO® originale realizate de Albert Oprea." />
+  <meta name="twitter:image" content="https://brickasso.art/logo.png" />
+  <meta name="twitter:image:alt" content="Galeria Brickasso® cu lucrări LEGO® originale de Albert Oprea" />
+  <meta name="twitter:site" content="@brickasso_art" />
+  <meta name="twitter:creator" content="@brickasso_art" />
 
   <link rel="icon" href="/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="/logo.png" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://brickasso.art/#website",
+        "url": "https://brickasso.art/",
+        "name": "Brickasso®",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Brickasso®",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://brickasso.art/logo.png"
+          }
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://brickasso.art/gallery.html#collectionpage",
+        "url": "https://brickasso.art/gallery.html",
+        "name": "Galerie Brickasso®",
+        "description": "Galeria Brickasso® prezintă lucrări LEGO® originale realizate de Albert Oprea, incluzând portrete, ceasuri și opere sculpturale construite manual.",
+        "isPartOf": {
+          "@id": "https://brickasso.art/#website"
+        },
+        "about": {
+          "@type": "Person",
+          "name": "Albert Oprea"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Brickasso®",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://brickasso.art/logo.png"
+          }
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     body{margin:0;padding:0;font-family:'Montserrat',sans-serif;
@@ -89,22 +148,22 @@
 <body>
   <header>
     <a href="index.html">
-      <img src="brickasso-logo.gif" alt="Brickasso® Logo" class="logo">
+      <img src="brickasso-logo.gif" alt="Logo Brickasso®" class="logo">
     </a>
-    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Meniu</button>
     <nav id="mobile-menu">
-      <a href="index.html" onclick="toggleMenu()">Home</a>
-      <a href="gallery.html" onclick="toggleMenu()">Gallery</a>
-      <a href="about.html" onclick="toggleMenu()">About</a>
-      <a href="portfolio.html" onclick="toggleMenu()">Portfolio</a>
-      <a href="certificate.html" onclick="toggleMenu()">Certificate</a>
+      <a href="index.html" onclick="toggleMenu()">Acasă</a>
+      <a href="gallery.html" onclick="toggleMenu()">Galerie</a>
+      <a href="about.html" onclick="toggleMenu()">Despre</a>
+      <a href="portfolio.html" onclick="toggleMenu()">Portofoliu</a>
+      <a href="certificate.html" onclick="toggleMenu()">Certificat</a>
       <a href="contact.html" onclick="toggleMenu()">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Gallery</h1>
-    <p>Selected LEGO® artworks by Albert Oprea.</p>
+    <h1>Galerie</h1>
+    <p>Lucrări LEGO® selectate realizate de Albert Oprea.</p>
   </section>
 
   <section class="gallery">
@@ -112,65 +171,64 @@
 
       <a class="tile-link" href="ballerina.html">
         <figure class="tile">
-          <img src="ballerina-front.webp" alt="Ballerina – 3D LEGO mosaic">
-          <figcaption>Ballerina – Details (BRK-06)</figcaption>
+          <img src="ballerina-front.webp" alt="Balerina, mozaic LEGO 3D">
+          <figcaption>Balerina, Detalii, BRK-06</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="david-beckham.html">
         <figure class="tile">
-          <img src="beckham-front.webp" alt="David Beckham Tribute – 3D LEGO mosaic">
-          <figcaption>David Beckham Tribute – Details (BRK-05)</figcaption>
+          <img src="beckham-front.webp" alt="Omagiu David Beckham, mozaic LEGO 3D">
+          <figcaption>Omagiu David Beckham, Detalii, BRK-05</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="black-horse.html">
         <figure class="tile">
-          <img src="black-horse.webp" alt="Black Horse – 3D LEGO mosaic">
-          <figcaption>The Black Horse – Details (BRK-04)</figcaption>
+          <img src="black-horse.webp" alt="Calul Negru, mozaic LEGO 3D">
+          <figcaption>Calul Negru, Detalii, BRK-04</figcaption>
         </figure>
       </a>
 
-      <!-- Afghan Girl (BRK-03) -->
       <a class="tile-link" href="afghan-girl.html">
         <figure class="tile">
-          <img src="afghan-girl-front.webp" alt="Afghan Girl – LEGO® 3D mosaic">
-          <figcaption>Afghan Girl – Details (BRK-03)</figcaption>
+          <img src="afghan-girl-front.webp" alt="Afghan Girl, mozaic LEGO® 3D">
+          <figcaption>Afghan Girl, Detalii, BRK-03</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="pepsi02.html">
         <figure class="tile">
-          <img src="pepsi02.webp" alt="Pepsi 02 – 3D LEGO mosaic">
-          <figcaption>Pepsi 02 – Details (BRK-02 · New Edition)</figcaption>
+          <img src="pepsi02.webp" alt="Pepsi 02, mozaic LEGO 3D">
+          <figcaption>Pepsi 02, Detalii, BRK-02, Ediție nouă</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="white-horse.html">
         <figure class="tile">
-          <img src="white-horse.webp" alt="The White Horse – 3D LEGO mosaic">
-          <figcaption>The White Horse – Details (BRK-01 · First Signed)</figcaption>
+          <img src="white-horse.webp" alt="Calul Alb, mozaic LEGO 3D">
+          <figcaption>Calul Alb, Detalii, BRK-01, Prima lucrare semnată</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="daytona.html">
         <figure class="tile">
-          <img src="daytona.webp" alt="Daytona – 3D LEGO mosaic">
-          <figcaption>Daytona – Details (Part of the Brickasso® Journey)</figcaption>
+          <img src="daytona.webp" alt="Daytona, mozaic LEGO 3D">
+          <figcaption>Daytona, Detalii, Parte din Brickasso® Journey</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="pepsi.html">
         <figure class="tile">
-          <img src="pepsi.webp" alt="Pepsi – 3D LEGO mosaic">
-          <figcaption>Pepsi – Details (Part of the Brickasso® Journey)</figcaption>
+          <img src="pepsi.webp" alt="Pepsi, mozaic LEGO 3D">
+          <figcaption>Pepsi, Detalii, Parte din Brickasso® Journey</figcaption>
         </figure>
       </a>
 
       <a class="tile-link" href="hulk.html">
         <figure class="tile">
-          <img src="hulk.webp" alt="Hulk – 3D LEGO mosaic">
-          <figcaption>Hulk – Details (Part of the Brickasso® Journey)</figcaption>
+          <img src="hulk.webp" alt="Hulk, mozaic LEGO 3D">
+          <figcaption>Hulk, Detalii, Parte din Brickasso® Journey</figcaption>
         </figure>
       </a>
 
@@ -193,19 +251,19 @@
       </a>
     </div>
 
-    <p>© 2025 Brickasso® | Original LEGO® Art by Albert Oprea</p>
+    <p>© 2025 Brickasso® | Artă LEGO® originală de Albert Oprea</p>
 
     <p style="max-width:1000px; margin:5px auto; font-size:11px; line-height:1.4; color:#333;">
-  LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse Brickasso® artworks.
-</p>
+      LEGO® este marcă înregistrată a LEGO Group of companies, care nu sponsorizează, autorizează sau susține lucrările Brickasso®.
+    </p>
 
-<p style="max-width:1000px; margin:5px auto; font-size:11px; line-height:1.4; color:#333;">
-  Brickasso® is an independent artistic brand by Albert Oprea and is not affiliated with, endorsed by, or connected to Pablo Picasso or his estate.
-</p>
+    <p style="max-width:1000px; margin:5px auto; font-size:11px; line-height:1.4; color:#333;">
+      Brickasso® este un brand artistic independent al lui Albert Oprea și nu este afiliat, susținut sau conectat cu Pablo Picasso sau cu moștenirea sa.
+    </p>
 
     <p>
-      <a href="/about" style="color:#000; text-decoration:none; margin:0 10px;">About</a> |
-      <a href="/gallery" style="color:#000; text-decoration:none; margin:0 10px;">Gallery</a> |
+      <a href="/about" style="color:#000; text-decoration:none; margin:0 10px;">Despre</a> |
+      <a href="/gallery" style="color:#000; text-decoration:none; margin:0 10px;">Galerie</a> |
       <a href="/contact" style="color:#000; text-decoration:none; margin:0 10px;">Contact</a>
     </p>
   </footer>
