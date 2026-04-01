@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brickasso® | LEGO® Art by Albert Oprea</title>
-  <meta name="description" content="Official website of Brickasso® by Albert Oprea. One-of-one LEGO® artworks, built by hand, signed, catalogued and certified. Discover original portraits, collector works and sculptural LEGO® art." />
+  <title>Brickasso® | Artă LEGO® de Albert Oprea</title>
+  <meta name="description" content="Siteul oficial Brickasso® de Albert Oprea. Lucrări LEGO® unicat, construite manual, semnate, catalogate și certificate. Descoperă portrete originale, lucrări pentru colecționari și artă LEGO® sculpturală." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="Albert Oprea" />
   <meta name="theme-color" content="#0f1113" />
   <link rel="canonical" href="https://brickasso.art/" />
 
-  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale" content="ro_RO" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Brickasso®" />
-  <meta property="og:title" content="Brickasso® | LEGO® Art by Albert Oprea" />
-  <meta property="og:description" content="One-of-one LEGO® artworks by Albert Oprea, built by hand, signed, catalogued and certified. Discover the world of Brickasso®." />
+  <meta property="og:title" content="Brickasso® | Artă LEGO® de Albert Oprea" />
+  <meta property="og:description" content="Lucrări LEGO® unicat de Albert Oprea, construite manual, semnate, catalogate și certificate. Descoperă universul Brickasso®." />
   <meta property="og:url" content="https://brickasso.art/" />
   <meta property="og:image" content="https://brickasso.art/preview-social.jpg" />
   <meta property="og:image:secure_url" content="https://brickasso.art/preview-social.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Brickasso® LEGO® artworks by Albert Oprea" />
+  <meta property="og:image:alt" content="Lucrări LEGO® Brickasso® de Albert Oprea" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Brickasso® | LEGO® Art by Albert Oprea" />
-  <meta name="twitter:description" content="One-of-one LEGO® artworks by Albert Oprea, built by hand, signed, catalogued and certified." />
+  <meta name="twitter:title" content="Brickasso® | Artă LEGO® de Albert Oprea" />
+  <meta name="twitter:description" content="Lucrări LEGO® unicat de Albert Oprea, construite manual, semnate, catalogate și certificate." />
   <meta name="twitter:image" content="https://brickasso.art/preview-social.jpg" />
-  <meta name="twitter:image:alt" content="Brickasso® LEGO® artworks by Albert Oprea" />
+  <meta name="twitter:image:alt" content="Lucrări LEGO® Brickasso® de Albert Oprea" />
   <meta name="twitter:site" content="@brickasso_art" />
   <meta name="twitter:creator" content="@brickasso_art" />
 
@@ -612,74 +612,115 @@
     }
 
     @media (max-width: 768px){
+      body{
+        overflow:auto;
+      }
+
+      .scene{
+        min-height:100svh;
+        height:100svh;
+      }
+
+      .background{
+        width:100%;
+        height:100%;
+        min-height:100svh;
+        object-fit:cover;
+        object-position:62% center;
+        animation:none;
+      }
+
+      .overlay{
+        background:
+          radial-gradient(circle at 50% 34%, transparent 24%, rgba(0,0,0,0.38) 72%, rgba(0,0,0,0.55) 100%),
+          linear-gradient(to bottom, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.06) 28%, rgba(0,0,0,0.34) 100%);
+      }
+
       .title-block{
-        top:28%;
+        top:20%;
+        left:50%;
+        transform:translate(-50%,-50%);
         width:calc(100% - 28px);
+        text-align:center;
+      }
+
+      .title-inner{
+        animation:none;
       }
 
       .brand{
-        font-size:3.02rem;
-        letter-spacing:-1px;
+        font-size:2.65rem;
+        letter-spacing:-0.8px;
+        line-height:0.95;
       }
 
       .name{
-        font-size:3.18rem;
-        margin:8px 0 12px;
-        letter-spacing:-0.6px;
+        font-size:2.9rem;
+        margin:6px 0 10px;
+        letter-spacing:-0.4px;
+        line-height:0.92;
       }
 
       .tag{
-        font-size:0.98rem;
+        font-size:0.95rem;
+        line-height:1.4;
+        max-width:90%;
+        margin:0 auto;
       }
 
       .gallery-cta-wrap{
-        bottom:68px;
+        bottom:84px;
         width:100%;
         padding:0 16px;
       }
 
       .gallery-cta{
-        font-size:14.5px;
-        padding:13px 36px;
+        font-size:14px;
+        padding:12px 30px;
       }
 
       .disclaimer{
-        bottom:16px;
-        font-size:10.5px;
+        bottom:14px;
+        width:calc(100% - 24px);
+        max-width:none;
+        white-space:normal;
+        font-size:10px;
+        line-height:1.35;
+        text-align:center;
       }
     }
   </style>
 </head>
 <body>
   <main class="scene">
-    <img src="white-horse-home.webp" alt="The White Horse by Brickasso®" class="background">
+    <img src="white-horse-home.webp" alt="The White Horse de Brickasso®" class="background">
     <div class="overlay"></div>
 
-    <nav class="top-nav" aria-label="Main">
-      <a href="index.html" class="active">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="certificate.html">Certificate</a>
-      <a href="collector-selection.html">Brickasso No. 12</a>
-      <a href="https://www.paypal.com/ncp/payment/PSNYZ6JM2NFTW" target="_blank" rel="noopener">Support</a>
+    <nav class="top-nav" aria-label="Principal">
+      <a href="index.html" class="active">Acasă</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="about.html">Despre</a>
+      <a href="portfolio.html">Portofoliu</a>
+      <a href="certificate.html">Certificat</a>
+      <a href="collector-selection.html">Brickasso Nr. 12</a>
+      <a href="https://www.paypal.com/ncp/payment/PSNYZ6JM2NFTW" target="_blank" rel="noopener">Susține</a>
       <a href="contact.html">Contact</a>
     </nav>
 
-    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">MENU</button>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Deschide meniul">MENIU</button>
 
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile main">
-      <a href="index.html" class="active" onclick="toggleMobileMenu()">Home</a>
-      <a href="gallery.html" onclick="toggleMobileMenu()">Gallery</a>
-      <a href="about.html" onclick="toggleMobileMenu()">About</a>
-      <a href="portfolio.html" onclick="toggleMobileMenu()">Portfolio</a>
-      <a href="certificate.html" onclick="toggleMobileMenu()">Certificate</a>
-      <a href="collector-selection.html" onclick="toggleMobileMenu()">Brickasso No. 12</a>
-      <a href="https://www.paypal.com/ncp/payment/PSNYZ6JM2NFTW" target="_blank" rel="noopener">Support</a>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Meniu principal mobil">
+      <a href="index.html" class="active" onclick="toggleMobileMenu()">Acasă</a>
+      <a href="gallery.html" onclick="toggleMobileMenu()">Galerie</a>
+      <a href="about.html" onclick="toggleMobileMenu()">Despre</a>
+      <a href="portfolio.html" onclick="toggleMobileMenu()">Portofoliu</a>
+      <a href="certificate.html" onclick="toggleMobileMenu()">Certificat</a>
+      <a href="collector-selection.html" onclick="toggleMobileMenu()">Brickasso Nr. 12</a>
+      <a href="https://www.paypal.com/ncp/payment/PSNYZ6JM2NFTW" target="_blank" rel="noopener">Susține</a>
       <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
     </nav>
 
-    <section class="title-block" aria-label="Homepage title">
+    <section class="title-block" aria-label="Titlul paginii principale">
       <div class="title-inner">
         <div class="text-line center-mobile">
           <h2 class="brand">Brickasso<span class="reg">®</span></h2>
@@ -688,17 +729,17 @@
           <h3 class="name">Albert Oprea</h3>
         </div>
         <div class="text-line center-mobile">
-          <p class="tag">One of one LEGO® artworks</p>
+          <p class="tag">Lucrări LEGO® unicat</p>
         </div>
       </div>
     </section>
 
     <div class="gallery-cta-wrap">
-      <a href="gallery.html" class="gallery-cta">Enter Gallery</a>
+      <a href="gallery.html" class="gallery-cta">Intră în galerie</a>
     </div>
 
     <div class="disclaimer">
-      LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse Brickasso® artworks.
+      LEGO® este o marcă a LEGO Group, care nu sponsorizează, autorizează sau susține lucrările Brickasso®.
     </div>
   </main>
 
