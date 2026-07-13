@@ -1,0 +1,23 @@
+/* ECHIPĂ */
+Proiect: Siteul oficial Brickasso®
+Artist: Albert Oprea
+Site: https://brickasso.ro/
+Social: https://www.instagram.com/brickasso.official
+Social: https://www.tiktok.com/@brickasso.art
+Social: https://www.youtube.com/@brickasso.official
+Social: https://x.com/brickasso_art
+
+/* SITE */
+Scop: Arhiva digitală permanentă a practicii artistice Brickasso®.
+Limbă: Română
+Standarde: HTML, CSS, Schema.org, Open Graph, Twitter Cards, XML Sitemap, Web App Manifest
+Secțiuni principale: Acasă, Galerie, Despre, Portofoliu, Catalog, Certificat, Contact
+Principiul catalogului: Arhivă cronologică. Numerele BRK sunt permanente și nu sunt reutilizate.
+
+/* PRACTICA ARTISTICĂ */
+Lucrările Brickasso® sunt lucrări originale unicat, construite din elemente LEGO®.
+Siteul documentează conceptul, cronologia, autenticitatea, contextul provenienței, narațiunile ascunse, relieful sculptural și evoluția artistică.
+
+/* DREPTURI DE AUTOR */
+© Albert Oprea. Toate drepturile rezervate.
+LEGO® este o marcă înregistrată a LEGO Group, care nu sponsorizează, nu autorizează și nu susține lucrările Brickasso®.
