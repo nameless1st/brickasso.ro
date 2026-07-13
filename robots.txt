@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brickasso.ro/sitemap.xml
+Sitemap: https://brickasso.ro/sitemap-image.xml
+
+# Fișier oficial de context pentru sistemele AI
+# https://brickasso.ro/llms.txt

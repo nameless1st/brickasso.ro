@@ -1,0 +1,239 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://brickasso.ro/#website",
+      "name": "Brickasso®",
+      "url": "https://brickasso.ro/",
+      "description": "Siteul oficial Brickasso®, practica artistică contemporană a lui Albert Oprea.",
+      "inLanguage": "ro",
+      "publisher": {
+        "@id": "https://brickasso.ro/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://brickasso.ro/#organization",
+      "name": "Brickasso®",
+      "url": "https://brickasso.ro/",
+      "logo": "https://brickasso.ro/logo.png",
+      "image": "https://brickasso.ro/preview-social.jpg",
+      "sameAs": [
+        "https://www.instagram.com/brickasso.official",
+        "https://www.tiktok.com/@brickasso.art",
+        "https://www.youtube.com/@brickasso.official",
+        "https://x.com/brickasso_art"
+      ],
+      "founder": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://brickasso.ro/#albert-oprea",
+      "name": "Albert Oprea",
+      "url": "https://brickasso.ro/about.html",
+      "sameAs": [
+        "https://www.instagram.com/brickasso.official",
+        "https://www.tiktok.com/@brickasso.art",
+        "https://www.youtube.com/@brickasso.official",
+        "https://x.com/brickasso_art"
+      ],
+      "creatorOf": [
+        {
+          "@id": "https://brickasso.ro/#organization"
+        },
+        {
+          "@id": "https://brickasso.ro/catalogue.html#catalogue"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://brickasso.ro/catalogue.html#catalogue",
+      "name": "Catalogul oficial Brickasso®",
+      "url": "https://brickasso.ro/catalogue.html",
+      "description": "Arhiva cronologică oficială a lucrărilor Brickasso®.",
+      "about": {
+        "@id": "https://brickasso.ro/#organization"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/white-horse.html#artwork",
+      "identifier": "BRK-01",
+      "name": "The White Horse",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/white-horse.html",
+      "description": "Prima lucrare Brickasso® documentată și începutul practicii artistice.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/pepsi02.html#artwork",
+      "identifier": "BRK-02",
+      "name": "Pepsi",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/pepsi02.html",
+      "description": "O lucrare originală Brickasso® documentată în catalogul oficial.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/afghan-girl.html#artwork",
+      "identifier": "BRK-03",
+      "name": "Afghan Girl",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/afghan-girl.html",
+      "description": "O lucrare Brickasso® documentată, realizată pe baza unei imagini licențiate.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/black-horse.html#artwork",
+      "identifier": "BRK-04",
+      "name": "Black Horse",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/black-horse.html",
+      "description": "O lucrare originală Brickasso® documentată în catalogul oficial.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/david-beckham.html#artwork",
+      "identifier": "BRK-05",
+      "name": "David Beckham",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/david-beckham.html",
+      "description": "O lucrare originală Brickasso® documentată în catalogul oficial.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/ballerina.html#artwork",
+      "identifier": "BRK-06",
+      "name": "Ballerina",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/ballerina.html",
+      "description": "O lucrare originală Brickasso® documentată în catalogul oficial.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/happysun.html#artwork",
+      "identifier": "BRK-08",
+      "name": "Happy Sun",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/happysun.html",
+      "description": "O lucrare originală Brickasso® documentată în catalogul oficial.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/piersic.html#artwork",
+      "identifier": "BRK-09",
+      "name": "The Legend",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/piersic.html",
+      "description": "O lucrare originală Brickasso® prezentată în finala emisiunii Românii au talent.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/comaneci.html#artwork",
+      "identifier": "BRK-10",
+      "name": "The Perfection",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/comaneci.html",
+      "description": "O lucrare originală Brickasso® dedicată Nadiei Comăneci.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/brk13.html#artwork",
+      "identifier": "BRK-13",
+      "name": "The Champion's Blade",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/brk13.html",
+      "description": "O lucrare originală Brickasso® dedicată Anei Maria Brânză.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://brickasso.ro/kosmos.html#artwork",
+      "identifier": "BRK-14",
+      "name": "Kosmos",
+      "creator": {
+        "@id": "https://brickasso.ro/#albert-oprea"
+      },
+      "artform": "Artă contemporană",
+      "artMedium": "Elemente LEGO®",
+      "url": "https://brickasso.ro/kosmos.html",
+      "description": "O lucrare originală Brickasso® realizată la comandă și documentată în catalogul oficial.",
+      "isPartOf": {
+        "@id": "https://brickasso.ro/catalogue.html#catalogue"
+      }
+    }
+  ]
+}
