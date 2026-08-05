@@ -248,6 +248,79 @@
       .footer-social{gap:16px;}
       .footer-social img{width:46px;height:46px;}
     }
+  
+    .platform-flow{margin-top:34px;}
+    .platform-question{margin:0 0 14px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted);}
+    .platform-picker{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+    .platform-choice{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--ink);
+      border-radius:999px;
+      padding:11px 16px;
+      font:inherit;
+      font-size:.76rem;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      cursor:pointer;
+      transition:transform .22s ease,background .22s ease,color .22s ease,border-color .22s ease;
+    }
+    .platform-choice:hover{transform:translateY(-2px);border-color:#111;}
+    .platform-choice.active{background:#111;color:#fff;border-color:#111;}
+    .platform-panel{
+      display:none;
+      margin-top:16px;
+      padding:24px;
+      background:var(--paper-soft);
+      border:1px solid var(--line);
+      box-shadow:0 14px 40px rgba(0,0,0,.045);
+    }
+    .platform-panel.active{display:block;}
+    .platform-panel h3{
+      margin:0 0 10px;
+      font-family:'Cormorant Garamond',serif;
+      font-size:2rem;
+      line-height:1;
+      font-weight:600;
+    }
+    .platform-panel p{margin:0 0 18px;line-height:1.7;color:var(--text);}
+    .platform-actions{display:flex;flex-wrap:wrap;gap:10px;}
+    .platform-actions a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:11px 18px;
+      border-radius:999px;
+      border:1px solid #111;
+      font-size:.72rem;
+      font-weight:700;
+      letter-spacing:.07em;
+      text-transform:uppercase;
+      background:#111;
+      color:#fff;
+    }
+    .platform-actions a.secondary{background:#fff;color:#111;}
+    .instruction-note{
+      margin-top:18px;
+      padding:14px 16px;
+      border-left:3px solid #111;
+      background:#fff;
+      font-size:.9rem;
+      line-height:1.65;
+      color:var(--text);
+    }
+
+    @media (max-width:760px){
+      .platform-picker{gap:8px;}
+      .platform-choice{padding:10px 13px;font-size:.68rem;}
+      .platform-panel{padding:20px;}
+      .platform-actions{display:grid;grid-template-columns:1fr;}
+      .platform-actions a{width:100%;}
+    }
+
   </style>
 </head>
 <body>
@@ -302,43 +375,69 @@
           </figure>
 
           <div class="selection-copy">
-            <span class="registry-pill">The Angel · Brickasso® No. 12 · BRK-12</span>
+            <span class="registry-pill">The Angel · Brickasso® Nr. 12 · BRK-12</span>
             <h2>Cum intri în selecție</h2>
-            <p>Parcurge toți pașii pe platforma unde ai descoperit campania. Vor fi analizate doar înscrierile care pot fi verificate.</p>
+            <p>Alege platforma pe care participi. Vei vedea exact ce trebuie să faci și vei putea deschide direct profilul Brickasso® și videoclipul campaniei.</p>
+
+            <div class="platform-flow">
+              <p class="platform-question">Pe ce platformă participi?</p>
+
+              <div class="platform-picker" role="tablist" aria-label="Alege platforma">
+                <button class="platform-choice active" type="button" data-platform="instagram">Instagram</button>
+                <button class="platform-choice" type="button" data-platform="facebook">Facebook</button>
+                <button class="platform-choice" type="button" data-platform="tiktok">TikTok</button>
+                <button class="platform-choice" type="button" data-platform="youtube">YouTube</button>
+                <button class="platform-choice" type="button" data-platform="x">X</button>
+              </div>
+
+              <div class="platform-panel active" id="platformPanel">
+                <h3 id="platformTitle">Instagram</h3>
+                <p id="platformInstruction">Urmărește Brickasso®, apreciază videoclipul, scrie un comentariu și distribuie Reel-ul în Story. Menționează @brickasso.official.</p>
+
+                <div class="platform-actions">
+                  <a id="platformProfileLink" href="https://instagram.com/brickasso.official" target="_blank" rel="noopener noreferrer">Deschide profilul</a>
+                  <a id="platformVideoLink" class="secondary" href="https://www.instagram.com/reel/DWXBG-1DLCE/" target="_blank" rel="noopener noreferrer">Deschide videoclipul</a>
+                </div>
+
+                <div class="instruction-note" id="platformNote">După ce finalizezi pașii, revino aici și completează formularul folosind același username.</div>
+              </div>
+            </div>
 
             <div class="steps">
               <article class="step">
                 <div class="step-number">1</div>
                 <div>
-                  <h3>Follow Brickasso®</h3>
-                  <p>Urmărește contul oficial Brickasso® pe platforma pe care ai ales să participi.</p>
-                  <div class="social-links">
-                    <a href="https://instagram.com/brickasso.official" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://www.facebook.com/brickasso" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://www.tiktok.com/@brickasso.art" target="_blank" rel="noopener noreferrer">TikTok</a>
-                    <a href="https://www.youtube.com/@brickasso.official" target="_blank" rel="noopener noreferrer">YouTube</a>
-                    <a href="https://x.com/brickasso_art" target="_blank" rel="noopener noreferrer">X</a>
-                  </div>
+                  <h3>Alege platforma</h3>
+                  <p>Selectează Instagram, Facebook, TikTok, YouTube sau X și urmează instrucțiunile afișate.</p>
                 </div>
               </article>
 
               <article class="step">
                 <div class="step-number">2</div>
-                <div><h3>Apreciază videoclipul campaniei</h3><p>Apreciază videoclipul principal dedicat lucrării Brickasso® Nr. 12, pe platforma unde l-ai descoperit.</p></div>
+                <div>
+                  <h3>Urmărește și interacționează</h3>
+                  <p>Urmărește Brickasso®, apreciază videoclipul și scrie un comentariu legat de The Angel.</p>
+                </div>
               </article>
 
               <article class="step">
                 <div class="step-number">3</div>
-                <div><h3>Distribuie videoclipul campaniei</h3><p>Distribuie sau republică videoclipul campaniei folosind opțiunile platformei.</p></div>
+                <div>
+                  <h3>Distribuie videoclipul</h3>
+                  <p>Folosește opțiunea potrivită platformei: Story, Share, Repost sau Retweet.</p>
+                </div>
               </article>
 
               <article class="step">
                 <div class="step-number">4</div>
-                <div><h3>Completează formularul oficial</h3><p>Trimite datele tale doar după ce ai parcurs pașii anteriori.</p></div>
+                <div>
+                  <h3>Completează formularul</h3>
+                  <p>Alege aceeași platformă și introdu username-ul folosit. Poți participa o dată pe fiecare platformă.</p>
+                </div>
               </article>
             </div>
 
-            <div class="notice">Un singur colecționar va fi ales pentru Brickasso® Nr. 12. Fiecare înscriere trebuie să poată fi verificată pe baza informațiilor trimise prin formular.</div>
+            <div class="notice">Poți obține până la 5 șanse personale, câte una pentru fiecare platformă. Fiecare persoană validă care se înscrie prin linkul tău îți aduce încă o șansă.</div>
           </div>
         </section>
 
@@ -422,6 +521,66 @@
         mobileLink.href = APPS_SCRIPT_WEB_APP_URL + query;
       }
     })();
+  </script>
+
+
+  <script>
+    const platformData = {
+      instagram: {
+        title: "Instagram",
+        profile: "https://instagram.com/brickasso.official",
+        video: "https://www.instagram.com/reel/DWXBG-1DLCE/",
+        instruction: "Urmărește Brickasso®, apreciază videoclipul, scrie un comentariu și distribuie Reel-ul în Story. Menționează @brickasso.official.",
+        note: "După ce finalizezi pașii, revino aici și completează formularul folosind același username."
+      },
+      facebook: {
+        title: "Facebook",
+        profile: "https://www.facebook.com/brickasso",
+        video: "https://www.instagram.com/reel/DWXBG-1DLCE/",
+        instruction: "Urmărește pagina Brickasso®, apreciază postarea și distribuie videoclipul public sau în Story.",
+        note: "Momentan, butonul videoclipului deschide Reel-ul de pe Instagram. Va fi înlocuit cu videoclipul Facebook când acesta este publicat."
+      },
+      tiktok: {
+        title: "TikTok",
+        profile: "https://www.tiktok.com/@brickasso.art",
+        video: "https://www.tiktok.com/@brickasso.art/video/7621653537050742038",
+        instruction: "Urmărește Brickasso®, apreciază videoclipul, scrie un comentariu, apoi apasă Share și Repost.",
+        note: "După ce finalizezi pașii, completează formularul cu username-ul TikTok folosit."
+      },
+      youtube: {
+        title: "YouTube",
+        profile: "https://www.youtube.com/@brickasso.official",
+        video: "https://www.youtube.com/watch?v=D3p3IrOEJhY",
+        instruction: "Abonează-te la canal, apreciază videoclipul, scrie un comentariu și distribuie linkul unui prieten.",
+        note: "Completează formularul cu numele canalului sau username-ul YouTube folosit."
+      },
+      x: {
+        title: "X",
+        profile: "https://x.com/Brickasso_art",
+        video: "https://x.com/Brickasso_art/status/2037401464780284068?s=20",
+        instruction: "Urmărește Brickasso®, apreciază postarea, scrie un răspuns și republică postarea.",
+        note: "Completează formularul cu username-ul X folosit pentru participare."
+      }
+    };
+
+    document.querySelectorAll(".platform-choice").forEach(function(button) {
+      button.addEventListener("click", function() {
+        const key = button.dataset.platform;
+        const data = platformData[key];
+
+        document.querySelectorAll(".platform-choice").forEach(function(item) {
+          item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        document.getElementById("platformTitle").textContent = data.title;
+        document.getElementById("platformInstruction").textContent = data.instruction;
+        document.getElementById("platformNote").textContent = data.note;
+        document.getElementById("platformProfileLink").href = data.profile;
+        document.getElementById("platformVideoLink").href = data.video;
+      });
+    });
   </script>
 
 </body>
