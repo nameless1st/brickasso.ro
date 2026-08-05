@@ -213,7 +213,7 @@
     .form-heading{text-align:center;max-width:760px;margin:0 auto 36px;}
     .form-heading p{margin:0 auto;font-size:1.02rem;line-height:1.78;color:var(--text);}
     .form-embed{overflow:hidden;background:#fff;box-shadow:0 22px 60px rgba(0,0,0,.08);}
-    .form-embed iframe{display:block;width:100%;min-height:1650px;border:0;background:#fff;}
+    .form-embed iframe{display:block;width:100%;min-height:1180px;border:0;background:#fff;}
     .mobile-form-link{display:none;text-align:center;padding:36px 24px;background:var(--paper-soft);}
     .mobile-form-link p{max-width:520px;margin:18px auto 0;color:var(--text);line-height:1.65;}
 
@@ -348,18 +348,20 @@
             <p>Completează formularul după ce ai parcurs toți pașii campaniei pe platforma aleasă.</p>
           </div>
 
-          <div class="form-embed">
+          <div class="form-embed referral-embed">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeWODQhDTkgVRvuTPQR7MPJzSzoDxS_ZOBwjrqPiInWxLwyJQ/viewform?embedded=true"
-              title="Brickasso No. 12 Selecția colecționarului Form"
-              loading="lazy">
+              id="referralForm"
+              src=""
+              title="Formular de înscriere și referral pentru Brickasso Nr. 12"
+              loading="lazy"
+              allow="clipboard-write">
               Se încarcă…
             </iframe>
           </div>
 
-          <div class="mobile-form-link">
-            <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeWODQhDTkgVRvuTPQR7MPJzSzoDxS_ZOBwjrqPiInWxLwyJQ/viewform" target="_blank" rel="noopener noreferrer">Completează formularul</a>
-            <p>Pe telefon, formularul se deschide într-o pagină separată, pentru a fi mai ușor de completat.</p>
+          <div class="mobile-form-link referral-mobile-link">
+            <a class="button" id="openReferralForm" href="#" target="_blank" rel="noopener noreferrer">Deschide formularul</a>
+            <p>Formularul se deschide într-o pagină separată pe telefon.</p>
           </div>
         </section>
       </div>
@@ -401,5 +403,26 @@
       }
     });
   </script>
+
+  <script>
+    const APPS_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz01haL6EKxwIE90YmaJnzCn5VTwhOARfOBlS8nKDwu42O-UOaNHA1PBVJ5vw2rPmflYQ/exec";
+
+    (function initializeReferralForm() {
+      const params = new URLSearchParams(window.location.search);
+      const ref = (params.get("ref") || "").trim();
+      const query = ref ? "?ref=" + encodeURIComponent(ref) : "";
+      const iframe = document.getElementById("referralForm");
+      const mobileLink = document.getElementById("openReferralForm");
+
+      if (iframe) {
+        iframe.src = APPS_SCRIPT_WEB_APP_URL + query;
+      }
+
+      if (mobileLink) {
+        mobileLink.href = APPS_SCRIPT_WEB_APP_URL + query;
+      }
+    })();
+  </script>
+
 </body>
 </html>
